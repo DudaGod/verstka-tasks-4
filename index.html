@@ -2,10 +2,206 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
         <title>DeLorean DMC-12</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Здесь применять вашу самую сильную магию -->
+        <div class="main-wrapper">
+            <p class="settings-title">Settings for advanced users from future:</p>
+            <label class="settings-text" for="fsize">Font Size:</label>
+            <input id="fsize" name="fsize" type="number" min="8" max="16" value="10"
+                onchange="this.setAttribute('value', this.value)">
+            <span class="settings-text" for="ftype">Font Type:</span>
+            <input id="ftype-1" name="ftype" type="radio" checked>
+            <label for="ftype-1" class="settings-type">Default</label>
+            <input id="ftype-2" name="ftype" type="radio">
+            <label for="ftype-2" class="settings-type">Sophisticated</label>
+            <input id="ftype-3" name="ftype" type="radio">
+            <label for="ftype-3" class="settings-type">Crazy</label>
+            <span class="settings-text">Magazine Theme:</span>
+            <input id="ftheme-1" name="ftheme" type="radio" checked>
+            <label class="settings-theme settings-theme--light" for="ftheme-1">A</label>
+            <input id="ftheme-2" name="ftheme" type="radio">
+            <label class="settings-theme settings-theme--dark" for="ftheme-2">A</label>
+
+            <div class="magazine">
+                <div class="magazine__outer magazine__outer--top clearfix">
+                    <span class="magazine-price">$1.50</span>
+                    <span class="magazine-date">May 1985</span>
+                    <span class="magazine-number">Volume 17, Number 10</span>
+                </div>
+
+                <div class="magazine__inner clearfix">
+                    <header class="magazine-header" role="banner">
+                        <h1 class="magazine-header__title">Freedom</h1>
+                        <div class="magazine-note clearfix">
+                            <p class="magazine-note__circulation">
+                                Circulation <span id="circ-num">4,450,000</span>
+                            </p>
+                            <p class="magazine-note__published">
+                                The independent journal published by the church of scientology &reg;
+                            </p>
+                        </div>
+                    </header>
+
+                    <article class="magazine-article magazine-article--main">
+                        <h2 class="magazine-article__heading">IRS Strategic Plan Exposed</h2>
+                        <p class="magazine-article__description">
+                            Computerized dossiers threaten americans' privacy
+                        </p>
+                        <aside class="magazine-sidebar">
+                            <h3 class="magazine-sidebar__heading">Inside:</h3>
+                            <nav role="navigation">
+                                <ul class="magazine-sidebar__list">
+                                    <li>
+                                        FREEDOM Editorial: Toward a Saner, Better World
+                                        <span>See page 2</span>
+                                    </li>
+                                    <li>
+                                        A History of Investigative Reporting
+                                        <span>See page 4</span>
+                                    </li>
+                                    <li>
+                                        FREEDOM Interview: Cleveland Amory "A Voice for the Voiceless"
+                                        <span>See page 6</span>
+                                    </li>
+                                    <li>
+                                        A Critical Look at Psychiatry by Thomas S. Szasz
+                                        <span>See page 7</span>
+                                    </li>
+                                    <li>
+                                        Truth in Taxation by William A. Kilpatrick
+                                        <span>See page 19</span>
+                                    </li>
+                                    <li>
+                                        Book Review: CIA Covert Actions Abroad
+                                        <span>See page 21</span>
+                                    </li>
+                                    <li>
+                                        COINTELPRO: Alive and Well in America by L. Fletcher Prouty
+                                        <span>See page 21</span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </aside>
+                        <div class="magazine-article__text">
+                            <p class="magazine-article__author">by Thomas G. Whittle and Andy Lenarcic</p>
+                            <p class="magazine-article__paragraph">
+                                An IRS plan to compile secret dossiers on all American citizens,
+                                which would contain the most detailed and intimate information about
+                                their personal, private lives, has been received by FREEDOM News Journal
+                                in response to our widely advertised request for information about IRS
+                                illegal and unconstitutional activities from current and former employees
+                                of the tax agency.
+                            </p>
+                            <p class="magazine-article__paragraph">
+                                The IRS's 204-page, tightly- guarded strategic plan, written in 1984,
+                                contains startling revelations about the IRS's intentions to:
+                            </p>
+                            <ul class="magazine-article__list">
+                                <li>
+                                    repare massive dossiers — called "taxpayer profiles" — with detailed,
+                                    personal, non-tax information on all American citizens;
+                                </li>
+                                <li>
+                                    Include in these dossiers a wide range of information not gathered from
+                                    taxpayer returns, including - behavioral data from attitude surveys";
+                                </li>
+                                <li>
+                                    Establish a "task force" to work with other federal agencies — including
+                                    the Federal Deposit Insurance Corporation (FDIC), the Federal
+                                    <figure class="magazine-article__list-photo">
+                                        <img src="img/photo-man1.jpg" width="200" height="227"
+                                        alt="photo Roscoe Egger">
+                                        <figcaption>IRS Commissioner Roscoe Egger</figcaption>
+                                    </figure>
+                                    Reserve Board, the Federal Home Loan Bank, the National Credit Union
+                                    Administration, and the land, Oregon, civil court. They out- line a
+                                    bizarre, multi-government agency plot designed to take over the
+                                    control, property and assets of the Church, in blatant violation of
+                                    constitutional rights and freedoms guaranteed by the First Amendment.
+                                    The evidence presented in the videotapes, copies of which were recently
+                                    obtained by FREEDOM, reveals that members of various government
+                                    agencies — including the FBI, the IRS, the Department of Justice, and
+                                    Canada's Ontario Provincial Police — and a Boston lawyer named Michael
+                                    Flynn directed and supervised the "running" of a covert government
+                                    intelligence operative, Gerry Armstrong, in a carefully orchestrated
+                                    conspiracy to over- continued on page 8 Office of the Comptroller of the
+                                    Currency — in order to gain access to these agencies' investigative
+                                    files and, presumably, to gather all- encompassing information about
+                                    credit card usage, banking deposits and withdrawals, loan applications
+                                    and payments, and other financial transactions;
+                                </li>
+                                <li>
+                                    "Formalize federal/state liaison in each [IRS] district" in order to
+                                    gather additional, detailed information about citizens and their private
+                                    lives, including business licenses, professional fees, property
+                                    transactions, and, apparently, memberships in groups, arrest records,
+                                    traffic violations, etc.;
+                                </li>
+                                <li>
+                                    Find ways to increase the IRS's "presence" in virtually all aspects
+                                    of a citizen's life; and
+                                </li>
+                            </ul>
+                            <p class="magazine-article__reference">continued on page 5</p>
+                        </div>
+                    </article>
+
+                    <article class="magazine-article">
+                        <h2 class="magazine-article__heading magazine-article__heading--long">
+                            Videotapes of Federal Informant Reveal Bizarre Government Plot to Destroy Church
+                        </h2>
+                        <div class="magazine__important">
+                            <h3 class="magazine__important-heading">
+                                Agencies in turmoil as conspiracy exposed
+                            </h3>
+                            <p class="magazine__important-text">
+                                FREEDOM's exposé of the Armstrong videotapes has created an uproar in a
+                                number of government agencies and departments.
+                            </p>
+                            <p class="magazine__important-reference">For the latest news, see page 15.</p>
+                        </div>
+                        <div class="magazine-article__text magazine-article__text--full">
+                            <p class="magazine-article__author">by Stacy Young</p>
+                            <p class="magazine-article__paragraph">
+                                Videotapes made of a police- sanctioned "sting" operation, showing a series
+                                of clandestine meetings between a federal witness and a member of the
+                                Church of Scientology, were recently exposed in a Port- IRS Commissioner
+                                Roscoe Egger Reserve Board, the Federal Home Loan Bank, the National Credit
+                                Union Administration, and the land, Oregon, civil court. They outline a
+                                bizarre, multi-government- agency plot designed to take over the control,
+                                property and assets of the Church, in blatant violation of constitutional
+                                rights and freedoms guaranteed by the First Amendment.
+                            </p>
+                            <p class="magazine-article__paragraph">
+                                The evidence presented in the videotapes, copies of which were recently
+                                obtained by FREEDOM, reveals that members of various government agencies
+                                — including the FBI, the IRS, the Department of Justice, and Canada's
+                                Ontario Provincial Police — and a Boston lawyer named Michael Flynn directed
+                                and supervised the "running" of a covert government intelligence operative,
+                                Gerry Armstrong, in a carefully orchestrated conspiracy to over
+                            </p>
+                            <p class="magazine-article__reference">continued on page 8</p>
+                            <figure class="magazine-article__list-photo">
+                                <img src="img/photo-man2.jpg" width="200" height="232"
+                                alt="photo special agent Al Lipkin">
+                                <figcaption>
+                                    IRS Criminal Investigation Division special agent Al Lipkin.
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="magazine__outer magazine__outer--bottom clearfix">
+                    <p class="magazine__outer-text">
+                        Freedom. liberty—frankness—outspokenness. the right of the individual or
+                        the group to be, to do, to have. freedom from/freedom to
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
