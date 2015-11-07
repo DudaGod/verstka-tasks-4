@@ -9,9 +9,18 @@
     <body>
         <div class="main-wrapper">
             <p class="settings-title">Settings for advanced users from future:</p>
-            <label class="settings-text" for="fsize">Font Size:</label>
-            <input id="fsize" name="fsize" type="number" min="8" max="16" value="10"
-                onchange="this.setAttribute('value', this.value)">
+            <span class="settings-text" for="fsize">Font Size:</span>
+            <input id="fsize-1" name="fsize" type="radio">
+            <label for="fsize-1" class="settings-size">8</label>
+            <input id="fsize-2" name="fsize" type="radio" checked>
+            <label for="fsize-2" class="settings-size">10</label>
+            <input id="fsize-3" name="fsize" type="radio">
+            <label for="fsize-3" class="settings-size">12</label>
+            <input id="fsize-4" name="fsize" type="radio">
+            <label for="fsize-4" class="settings-size">14</label>
+            <input id="fsize-5" name="fsize" type="radio">
+            <label for="fsize-5" class="settings-size">16</label>
+
             <span class="settings-text" for="ftype">Font Type:</span>
             <input id="ftype-1" name="ftype" type="radio" checked>
             <label for="ftype-1" class="settings-type">Default</label>
